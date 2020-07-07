@@ -1,0 +1,114 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress"
+    data-transition-duration="1000"
+    
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000">
+
+    
+    
+
+    <div id = "titel" class= "step slide" data-x="-1000" data-y="-500" >
+        <q>Juventus Turin</q>
+        <q>Julian Hofmaninger</q>
+    </div>
+    
+    <div id="team" class="step" data-x="1000" data-y="-2000">
+        <p>Team</p>
+    </div>
+
+    <div id="teamBild" class="step" data-x="1000" data-y="-2000" data-z="-1000">
+        <img height="500" width="700" src="Juventus-team-photo.jpg">
+    </div>
+
+    <div id = "teamText" class= "step slide" data-x="1000" data-y="-500" >
+        <q>O 24 Spieler</q>
+        <q>O 14 Nationalspieler</q>
+        <q>O 17 Legionäre</q>
+    </div>
+
+    <div id="stadion" class="step" data-x="2000" data-y="-2000">
+        <p>Stadion</p>
+    </div>
+
+
+    <div id="stadionBild" class="step" data-x="2000" data-y="1000" data-z="-1000" data-rotate-x="90" data-scale="1">
+        <img height ="500" width="700" src="Torino-Allianz-Stadium-Imc.jpg">
+    </div>
+
+    <div id = "stadionText" class= "step slide" data-x="3000" data-y="1000" >
+        <q>O 2011 Eröffnung</q>
+        <q>O 41.000 Plätze</q>
+        <q>O 155 Mio. Kosten</q>
+    </div>
+    <!-- <div id = "test" class= "step slide" data-x="3000" data-y="2000" data-z ="-500" data-rotate-x="-90">
+        <q>O 2011 Eröffnung</q>
+        
+    </div> -->
+
+    <div id="titel" class="step" data-x="1000" data-y="-2000">
+        <p>Titel</p>
+    </div>
+
+</div>
+
+
+<div id="impress-toolbar"></div>
+
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate. <br/>
+       Press 'P' to launch speaker console.</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
+
+
